@@ -73,7 +73,7 @@ class View:
     #: instead.
     #:
     #: .. versionadded:: 2.2
-    init_every_request: t.ClassVar[bool] = True
+    init_every_request: t.ClassVar[bool] = False
 
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """The actual view function behavior. Subclasses must override
